@@ -1,0 +1,27 @@
+.imagport{
+    height: 200px;
+    width: 450px;
+}
+
+
+.star{
+    font-size: 25px;
+    color: #BFBFBF;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.star:hover {
+    color: #202020;
+}
+
+ion-icon {
+    font-size: 25px;
+    color: #BFBFBF;
+}
+  
+ion-icon.selected {
+    color: #202020; 
+}
+
+

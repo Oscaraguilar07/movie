@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" style="--background: var(--app-background-color);">
+
+
+
+<!--inicio tarejeta del login------------------------------------>
+
+
+    <ion-card color="primary">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+            <div class="columna-izquierda">
+
+            </div>
+          </ion-col>
+          <ion-col size="10">
+            <div class="columna-centro">
+
+              <ion-card>
+
+                <ion-card-header>
+                  <ion-card-title>Ingresar</ion-card-title>
+                </ion-card-header>
+            
+                <ion-card-content>
+                  <form [formGroup]="formularioLogin">
+            
+                    <ion-item>
+                      <ion-label position="floating">Usuario</ion-label>
+                      <ion-input formControlName="nombre"></ion-input>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-label position="floating">Contraseña</ion-label>
+                      <ion-input formControlName="password" type="password"></ion-input>
+                    </ion-item>
+            
+                  </form>
+            
+                  <ion-button (click)="ingresar()">
+                    Ingresar
+                  </ion-button>
+            
+                </ion-card-content>
+            
+              </ion-card>
+
+            </div>
+          </ion-col>
+          <ion-col size="1">
+            <div class="columna-derecha">
+
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+
+
+</ion-content>
+
+<!--fin tarjeta de login---------------------------------------->
+
+
+
+
+
+<!--inicio footet----------------------------------------------->
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/register']">Registrarse</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+<!--fin footer------------------------------------------------->
